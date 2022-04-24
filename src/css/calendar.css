@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Smooch Sans", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;400;700;800&display=swap);
+}
+@font-face {
+  font-family: "Oswald", sans-serif;
+  src: url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&family=Smooch+Sans:wght@100;400;700;800&display=swap);
+}
+
+.widget-card {
+  min-width: 280px;
+  border-radius: 10px;
+}
+
+.widget-score {
+  font-family: "Smooch Sans", sans-serif;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.widget-team-name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: rgb(169, 123, 81);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}

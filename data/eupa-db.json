@@ -1,0 +1,35 @@
+{
+    "featuredArticles": [
+        { "id": 1, "title": "Ultimate in Egypt", "paragraph": "Ultimate in Egypt is cool yay! Join for fun ;)", "src": "./assets/img/Egypt_National_2016.jpg", "longArticle": ""},
+        { "id": 2, "title": "Egyptian Open 2022", "paragraph": "Tournament in Alexandria! Come watch", "src": "./assets/img/Egy_Open_2022_post.jpg", "longArticle": "lorem ipsum monkey junkie"},
+        { "id": 3, "title": "Ultimate in the region", "paragraph": "Ultimate in the MENA region is getting big! Look how amazing last year was!", "src": "./assets/img/MENA_2021.jpg", "longArticle": "lorem ipsum monkey papa"}
+    ],
+    "scheduledGames": [
+        { "id": 1, "home": "MUDD", "away": "ZN", "score": [3, 13], "date": "2022-01-21", "tournament": "EUDL - Week 1" },
+        { "id": 2, "home": "FP", "away": "MUDD", "score": [10, 2], "date": "4 Feb 2022", "tournament": "EUDL - Week 2" },
+        { "id": 3, "home": "FP", "away": "ZN", "score": [4, 13], "date": "11 Feb 2022", "tournament": "EUDL - Week 3" },
+        { "id": 4, "home": "ALEX", "away": "THU", "score": [], "date": "11 Feb 2022", "tournament": "EUDL - Week 3" },
+        { "id": 5, "home": "SUP", "away": "MAYH", "score": [], "date": "18 Feb 2022", "tournament": "EUDL - Week 4" },
+        { "id": 6, "home": "MUDD", "away": "SUP", "score": [], "date": "18 Feb 2022", "tournament": "EUDL - Week 4" },
+        { "id": 7, "home": "ZN", "away": "THU", "score": [], "date": "18 Feb 2022", "tournament": "EUDL - Week 4" },
+        { "id": 8, "home": "FP", "away": "THU", "score": [], "date": "18 Feb 2022", "tournament": "EUDL - Week 4" },
+        { "id": 9, "home": "ALEX", "away": "AIR", "score": [13, 2], "date": "18 Feb 2022", "tournament": "EUDL - Week 4" }
+        ,
+        { "id": 10, "home": "MUDD", "away": "MUDD", "score": [13, 13], "date": "18 Feb 2022", "tournament": "EUDL - Test" }
+    ],
+    "teams": [
+        {"id": 1 , "acronym": "AIR", "name": "GUC Airbenders", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 2 , "acronym": "ALEX", "name": "Alexandria Ultimate", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 3 , "acronym": "FP", "name": "Flicking Pharaohs", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 4 , "acronym": "MAYH", "name": "AUC Mayhem", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 5 , "acronym": "MUDD", "name": "MUDD", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 6 , "acronym": "SUP", "name": "Supernova", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 7 , "acronym": "THU", "name": "Smouha Thunder", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0},
+        {"id": 8 , "acronym": "ZN", "name": "Zayed Nar", "logoSrc": "", "points": 0, "win": 0, "loss": 0, "tie": 0, "PA": 0, "PF": 0}
+    ],
+    "carouselSlides": [
+        {"id": 1, "src": "./assets/img/EUNC_2021.jpg", "title": "EUNC 2021 Champions - Alexandria Ultimate", "paragraph": "After fierce competition and a huge comeback in the final, Alexandria Ultimate won the final from SuperNova.", "alt": "EUNC 2021 Champions - Alexandria Ultimate"},
+        {"id": 2, "src": "./assets/img/Egyptian_Open_2021.jpg", "title": "Egyptian Open 2021 Champions - SuperNova", "paragraph": "Some representative placeholder content for the second slide.", "alt": "Egyptian Open 2021 Champions - SuperNova"},
+        {"id": 3, "src": "./assets/img/Winter_league_2020.jpg", "title": "Winter League 2020 Champions - Alexandria Ultimate", "paragraph": "Some representative placeholder content for the third slide.", "alt": "Winter League 2020 Champions - Alexandria Ultimate"}
+    ]
+}
