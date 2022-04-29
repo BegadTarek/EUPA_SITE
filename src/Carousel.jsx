@@ -28,7 +28,7 @@ export default class Carousel extends Component {
   componentDidMount = async () => {
     //fetch carousel slides from db
     const response = await fetch(
-      "http://localhost/eupa_api/api/read_carousel_slides.php",
+      "https://eupa-api.000webhostapp.com/api/read_carousel_slides.php",
       {
         method: "GET",
       }

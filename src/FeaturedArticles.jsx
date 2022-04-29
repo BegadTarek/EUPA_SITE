@@ -11,9 +11,12 @@ export default class FeaturedArticles extends Component {
 
   componentDidMount = async () => {
     //fetch featured articles from db
-    const response = await fetch("http://localhost:5000/featuredArticles", {
-      method: "GET",
-    });
+    const response = await fetch(
+      "https://eupa-api.000webhostapp.com/api/read_featured_articles.php",
+      {
+        method: "GET",
+      }
+    );
     const featArticles = await response.json();
     this.setState({ featuredArticles: featArticles });
   };

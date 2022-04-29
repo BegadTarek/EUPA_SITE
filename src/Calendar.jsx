@@ -21,7 +21,7 @@ export default class Calendar extends Component {
   componentDidMount = async () => {
     //fetch scheduled games from db
     const response = await fetch(
-      "http://localhost/eupa_api/api/read_scheduled_games.php",
+      "https://eupa-api.000webhostapp.com/api/read_scheduled_games.php",
       {
         method: "GET",
       }
@@ -30,7 +30,10 @@ export default class Calendar extends Component {
     this.setState({ scheduledGames: games.reverse() });
 
     //fetch teams db
-    const res2 = await fetch("http://localhost:5000/teams", { method: "GET" });
+    const res2 = await fetch(
+      "https://eupa-api.000webhostapp.com/api/read_teams.php",
+      { method: "GET" }
+    );
     const teamsRes = await res2.json();
     this.setState({ teams: teamsRes });
   };
