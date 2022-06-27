@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import GameCard from "./GameCard";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper";
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 import "./css/calendar.css";
 
 export default class Calendar extends Component {
@@ -12,8 +13,10 @@ export default class Calendar extends Component {
       scheduledGames: [],
       teams: [],
       options: {
-        slidesPerView: 3,
+        slidesPerView: "auto",
         spaceBetween: 30,
+        freeMode: true,
+        modules: [FreeMode],
       },
     };
   }
@@ -41,7 +44,7 @@ export default class Calendar extends Component {
   getScheduledGames = () => {
     return this.state.scheduledGames.map((game, i) => {
       return (
-        <SwiperSlide key={"Match card " + i}>
+        <SwiperSlide key={"Match card " + i} className="flex-shrink-1">
           <GameCard
             home={game.home}
             away={game.away}
@@ -66,7 +69,9 @@ export default class Calendar extends Component {
           </div>
         </div>
         <div className="container-fluid">
-          <Swiper {...this.state.options}>{this.getScheduledGames()}</Swiper>
+          <Swiper {...this.state.options} style={{ flexShrink: 1 }}>
+            {this.getScheduledGames()}
+          </Swiper>
         </div>
       </div>
     );

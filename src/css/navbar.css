@@ -1,0 +1,18 @@
+.navLogo {
+    width: 9vw;
+    height: auto;
+    position: absolute;
+    top: -9970px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.logoOverflow {
+    width: 9vw;
+    overflow: visible;
+    position: relative;
+    height: 10px;
+    z-index: 3;
+}

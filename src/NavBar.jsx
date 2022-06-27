@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import "./css/navbar.css";
 
 export default class NavBar extends Component {
   render() {
@@ -8,13 +9,15 @@ export default class NavBar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">
-              <img
-                className="navLogo"
-                src="./assets/img/EUPA_logo_clear.png"
-                alt="EUPA Logo"
-              />
-            </Link>
+            <div className="navbar-brand logoOverflow">
+              <Link to="/">
+                <img
+                  className="navLogo"
+                  src="./assets/img/EUPA_logo_clear.png"
+                  alt="EUPA Logo"
+                />
+              </Link>
+            </div>
             <button
               className="navbar-toggler"
               type="button"

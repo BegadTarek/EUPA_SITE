@@ -14,10 +14,9 @@
   width: 60%;
 }
 
-.swiper-slide:nth-child(2n) {
-  width: 40%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 20%;
+.mySwiper {
+  overflow: hidden;
+  max-height: 40rem;
+  display: flex;
+  align-items: center;
 }

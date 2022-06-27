@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slide from "./Slide";
-import { Navigation } from "swiper";
-import "swiper/css/navigation";
+import { Navigation, Autoplay } from "swiper";
+import "swiper/css";
 import "swiper/css/bundle";
 import "./css/carousel.css";
 
@@ -20,7 +20,7 @@ export default class Carousel extends Component {
         autoplay: {
           delay: 5000,
         },
-        modules: [Navigation],
+        modules: [Navigation, Autoplay],
       },
     };
   }
@@ -40,7 +40,7 @@ export default class Carousel extends Component {
   getCarouselItems = () => {
     return this.state.carouselSlides.map((slide) => {
       return (
-        <SwiperSlide key={"Slide " + slide.id}>
+        <SwiperSlide key={"Slide " + slide.id} className="mySwiper">
           <Slide
             src={slide.src}
             title={slide.title}
@@ -55,9 +55,7 @@ export default class Carousel extends Component {
   render() {
     return (
       <div className="container-fluid">
-        <Swiper {...this.state.options} className="mySwiper">
-          {this.getCarouselItems()}
-        </Swiper>
+        <Swiper {...this.state.options}>{this.getCarouselItems()}</Swiper>
       </div>
     );
   }

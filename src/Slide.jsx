@@ -16,7 +16,7 @@ export default class Slide extends Component {
     return (
       <div>
         <img src={this.props.src} alt={this.props.alt} />
-        <div className="carousel-caption bg-dark bg-gradient bg-opacity-25 px-2">
+        <div className="carousel-caption bg-dark bg-gradient bg-opacity-25 px-2 ">
           <h2>{this.props.title}</h2>
           <p>{this.props.paragraph}</p>
         </div>
