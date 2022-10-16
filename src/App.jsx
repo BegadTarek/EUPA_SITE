@@ -15,6 +15,7 @@ export default class App extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/admin" element={<AdminHub />} />
+
             <Route path="*" element={<NoMatchPage />} />
           </Routes>
           <Footer />
