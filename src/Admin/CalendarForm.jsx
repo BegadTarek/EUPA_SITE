@@ -38,7 +38,9 @@ export default class CalendarForm extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <input type="sumbit" value="Submit" />
+          <button className="btn btn-primary" type="button" value="Submit">
+            Submit
+          </button>
         </form>
       </React.Fragment>
     );
